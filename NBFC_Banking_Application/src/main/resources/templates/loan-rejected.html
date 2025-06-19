@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Loan Status Update</title>
+</head>
+<body>
+    <h1>Loan Application Status</h1>
+    <p>Dear <span th:text="${customer.customerName}">Customer</span>,</p>
+    <p>Your loan application <strong th:text="${loan.applicationId}">#123</strong>
+       is currently <strong th:text="${loan.status}">Rejected</strong>.</p>
+</body>
+</html>
